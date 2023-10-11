@@ -1,12 +1,15 @@
-import { Button } from "@/components/ui/button";
-import { InstagramLogoIcon, ReloadIcon } from "@radix-ui/react-icons";
+import TeamSwitcher from "@/components/TeamSwitcher";
 
-export default function DashboardPage() {
+export default function Dashboard() {
   return (
-    <div className="grid h-screen place-items-center">
-      <div className="flex flex-row gap-3">
-        <Button>shadcnui</Button>
+    <>
+      <div className="hidden flex-col md:flex">
+        <div className="border-b">
+          <div className="flex h-16 items-center px-4">
+            <TeamSwitcher />
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
