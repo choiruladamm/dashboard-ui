@@ -1,12 +1,20 @@
+import MainNav from "@/components/MainNav";
+import Search from "@/components/Search";
 import TeamSwitcher from "@/components/TeamSwitcher";
+import UserNav from "@/components/UserNav";
 
 export default function Dashboard() {
   return (
     <>
-      <div className="hidden flex-col md:flex">
-        <div className="border-b">
-          <div className="flex h-16 items-center px-4">
+      <div className="flex-col hidden md:flex">
+        <div className="flex justify-between border-b">
+          <div className="flex items-center h-16 px-4">
             <TeamSwitcher />
+            <MainNav className="mx-6" />
+          </div>
+          <div className="flex items-center mr-4 gap-x-4">
+            <Search />
+            <UserNav />
           </div>
         </div>
       </div>
