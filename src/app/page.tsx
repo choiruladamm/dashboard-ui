@@ -4,6 +4,7 @@ import Search from "@/components/Search";
 import TeamSwitcher from "@/components/TeamSwitcher";
 import UserNav from "@/components/UserNav";
 import { Button } from "@/components/ui/button";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function Dashboard() {
   return (
@@ -27,6 +28,20 @@ export default function Dashboard() {
               <Button>Download</Button>
             </div>
           </div>
+          <Tabs defaultValue="overview" className="space-y-4">
+            <TabsList className="space-x-2">
+              <TabsTrigger value="overview">Overview</TabsTrigger>
+              <TabsTrigger value="analytics">Analytics</TabsTrigger>
+              <TabsTrigger value="reports">Reports</TabsTrigger>
+              <TabsTrigger value="notifications">Notifications</TabsTrigger>
+            </TabsList>
+            <TabsContent value="overview">Overview Content</TabsContent>
+            <TabsContent value="analytics">Analitics Content</TabsContent>
+            <TabsContent value="reports">Reports Content</TabsContent>
+            <TabsContent value="notifications">
+              Notifications Content
+            </TabsContent>
+          </Tabs>
         </div>
       </div>
     </>
