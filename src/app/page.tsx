@@ -2,6 +2,7 @@ import CalendarDateRangePicker from "@/components/CalendarDateRangePicker";
 import MainNav from "@/components/MainNav";
 import Search from "@/components/Search";
 import TeamSwitcher from "@/components/TeamSwitcher";
+import { ToogleDarkMode } from "@/components/ToogleDarkMode";
 import UserNav from "@/components/UserNav";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -15,6 +16,7 @@ export default function Dashboard() {
             <TeamSwitcher />
             <MainNav className="mx-6" />
             <div className="flex items-center ml-auto gap-x-4">
+              <ToogleDarkMode />
               <Search />
               <UserNav />
             </div>
