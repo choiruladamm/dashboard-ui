@@ -63,14 +63,14 @@ const TeamSwitcher: FC<TeamSwitcherProps> = ({ className }) => {
             aria-label="Select a team"
             className={cn("w-[200px] justify-between", className)}
           >
-            <Avatar className="mr-2 h-5 w-5">
+            <Avatar className="w-5 h-5 mr-2">
               <AvatarImage
                 src={`https://avatar.vercel.sh/${selectedTeam.value}.png`}
                 alt={selectedTeam.label}
               />
             </Avatar>
             {selectedTeam.label}
-            <CaretSortIcon className="ml-auto h-4 w-4 shrink-0 opacity-50" />
+            <CaretSortIcon className="w-4 h-4 ml-auto opacity-50 shrink-0" />
           </Button>
         </PopoverTrigger>
         <PopoverContent className="w-[200px] p-0">
@@ -89,7 +89,7 @@ const TeamSwitcher: FC<TeamSwitcherProps> = ({ className }) => {
                       }}
                       className="text-sm"
                     >
-                      <Avatar className="mr-2 h-5 w-5">
+                      <Avatar className="w-5 h-5 mr-2">
                         <AvatarImage
                           src={`https://avatar.vercel.sh/${team.value}.png`}
                           alt={team.label}
@@ -121,7 +121,7 @@ const TeamSwitcher: FC<TeamSwitcherProps> = ({ className }) => {
                       setShowNewTeamDialog(true);
                     }}
                   >
-                    <PlusCircledIcon className="mr-2 h-5 w-5" />
+                    <PlusCircledIcon className="w-5 h-5 mr-2" />
                     Create team
                   </CommandItem>
                 </DialogTrigger>
@@ -138,7 +138,7 @@ const TeamSwitcher: FC<TeamSwitcherProps> = ({ className }) => {
           </DialogDescription>
         </DialogHeader>
         <div>
-          <div className="pb-4 py-2 space-y-4">
+          <div className="py-2 pb-4 space-y-4">
             <div className="space-y-2">
               <Label>Team anem</Label>
               <Input id="name" placeholder="Acme Inc." />
