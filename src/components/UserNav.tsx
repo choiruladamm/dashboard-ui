@@ -20,7 +20,7 @@ const UserNav: FC<UserNavProps> = ({}) => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant={"ghost"} className="relative w-8 h-8 rounded-full">
+        <Button variant={"ghost"} className="relative w-8 h-8 rounded-full ">
           <Avatar className="w-8 h-8">
             <AvatarImage src="/avatar.png" />
             <AvatarFallback>SC</AvatarFallback>
